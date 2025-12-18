@@ -110,18 +110,20 @@ const Navbar = () => {
                         variant="subtitle1"
                         fontWeight={600}
                         gutterBottom
+                        color="blue"
                       >
                         {section.title}
                       </Typography>
                       {section.links.map((link, i) => (
                         <Typography
                           key={i}
+                          color="black"
                           variant="body2"
-                          sx={{
-                            cursor: "pointer",
-                            color: "text.secondary",
-                            "&:hover": { color: "primary.main" },
-                          }}
+                          // sx={{
+                          //   cursor: "pointer",
+                          //   color: "text.secondary",
+                          //   "&:hover": { color: "primary.main" },
+                          // }}
                         >
                           {link}
                         </Typography>
